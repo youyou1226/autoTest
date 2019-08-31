@@ -1,0 +1,17 @@
+123333AFFGGs你好文件
+广告服
+
+
+
+-;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;%JMETER_HOME%\lib\ext\ApacheJMeter_core.jar; %JMETER_HOME%\lib\jorphan.jar;
+
+
+.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;%JMETER_HOME%\lib\ext\ApacheJMeter_core.jar; %JMETER_HOME%\lib\jorphan.jar;
+
+.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;%JMETER_HOME%\lib\ext\ApacheJMeter_core.jar; %JMETER_HOME%\lib\jorphan.jar;
+
+.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;%JMETER_HOME%\lib\ext\ApacheJMeter_core.jar; %JMETER_HOME%\lib\jorphan.jar;
+
+.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;
+
+ <encoding>UTF8</encoding> <!-- 指定编码格式，否则在DOS下运行mvn compile命令时会出现莫名的错误，因为系统默认使用GBK编码 --> 

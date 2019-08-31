@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+ <!--parallel表示支持多线程，也就是并发,可选值(false | methods | tests | classes | instances)，默认 "false"；thread-count表示支持线程数 -->
+<suite name="Suite" parallel="false" thread-count="2">            
+  <test name="Test1">
+  <!-- 参数化 -->
+  	<parameter name="username" value="13474033286"/> <!-- 注意name value之间没有"," -->
+  	<parameter name="password" value="13474033286"/>
+  	 
+  	<listeners>
+	    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+	    <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+  	
+	 <classes>
+	 		<!--
+	 		 <class name="maven2.TestNGZhuJie"/> 
+	 		 <class name="maven2.TestNGZhuJie2"/>    
+	 		 -->                  <!-- name值为包名+类名 -->
+	 		<!--<class name="com.company.selenium.Case.TestCase"/> 	 		
+	 		<class name="com.company.selenium.Case.SuitTestShopCar" />   -->  
+	 		<class name="com.company.selenium.Case.SuitTestLogin"/>
+	 </classes> 
+	 
+	  
+  </test> 
+  
+  <![CDATA[ 
+     如果注释的代码块中已经有<!-- -->注释，这样做
+	  <test name="Test2"> <!-- 要执行Test1和Test2需要把上面suit的属性parallel值改为true -->
+	  	<classes>
+	  		<class name="com.company.selenium.Case.TestCourseList"/>
+	  	</classes>
+	  </test>
+  ]]>
+  
+</suite> 
